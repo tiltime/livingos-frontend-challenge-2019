@@ -42,3 +42,5 @@ You can choose any Places API as your datasource.
 - You can use any tools to develop it's up to you.
 - Testing is a must.
 - Typescript is a plus.
+
+if you have any question send and email to hireme@thelivingos.com
