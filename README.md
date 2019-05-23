@@ -2,6 +2,10 @@
 
 I'd like you to make a weather web application which can show the weather anywhere in the world.
 
+## Design Guideline
+
+
+
 ## Features
  - Responsive design.
  - Searching box provides a suggestion list when user types an input box.
