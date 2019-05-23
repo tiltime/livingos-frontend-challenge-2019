@@ -56,6 +56,6 @@ You can choose any Places API as your datasource.
 
 ## How to submit
 
-Fork this repository and send me to hireme@thelivingos.com when you're done an assignment.
+Fork this repository and send your repo to hireme@thelivingos.com when you're done an assignment.
 
 And also when you have a question. Feel free to contact us.
