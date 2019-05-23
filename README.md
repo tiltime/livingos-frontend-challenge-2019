@@ -23,12 +23,15 @@ I'd like you to make a weather web application which can show the weather anywhe
 
 ## Datasource
 **OpenWeather API**
+
 [https://openweathermap.org/api](https://openweathermap.org/api)
 
 **Weather icons**
+
 [https://openweathermap.org/weather-conditions](https://openweathermap.org/weather-conditions)
 
 **Places API**
+
 [https://geoawesomeness.com/google-maps-api-alternatives-best-cheap-affordable/](https://geoawesomeness.com/google-maps-api-alternatives-best-cheap-affordable/)
 You can choose any Places API as your datasource.
 
