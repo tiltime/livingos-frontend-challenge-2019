@@ -1,6 +1,11 @@
 # LivingOS: Frontend challenge
 
-I'd like you to make a weather web application which can show the weather anywhere in the world.
+Hi, all applicants who interest this job. We would like to take a test on your coding skill.
+
+We don't care any degree or how many experienced years, you have. :-), If you can implement our assignment.
+
+We'd like you to make a weather web application which can show the weather anywhere in the world. 
+
 
 ## Design Guideline
 
@@ -49,4 +54,5 @@ You can choose any Places API as your datasource.
 - Typescript is a plus.
 
 ## Contact
-if you have any question send and email to hireme@thelivingos.com
+if you have any question feel free send and email to hireme@thelivingos.com
+
