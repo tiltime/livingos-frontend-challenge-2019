@@ -33,6 +33,7 @@ I'd like you to make a weather web application which can show the weather anywhe
 **Places API**
 
 [https://geoawesomeness.com/google-maps-api-alternatives-best-cheap-affordable/](https://geoawesomeness.com/google-maps-api-alternatives-best-cheap-affordable/)
+
 You can choose any Places API as your datasource.
 
 
