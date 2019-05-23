@@ -1,6 +1,6 @@
 # LivingOS: Frontend challenge
 
-Hi, all applicants who interest this job. We would like to take a test on your coding skill.
+Hi, all applicants who interest this job oppunity. We would like to take a test on your coding skill.
 
 We don't care any degree or how many experienced years, you have. :-), If you can implement our assignment.
 
@@ -8,6 +8,7 @@ We'd like you to make a weather web application which can show the weather anywh
 
 
 ## Design Guideline
+This is just a guideline. You can adjust or totally redesign it.
 
 ![Screenshot](/img/example.jpg)
 
