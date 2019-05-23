@@ -9,6 +9,7 @@ We'd like you to make a weather web application which can show the weather anywh
 
 ## Design Guideline
 
+![Screenshot](/img/example.jpg)
 
 
 ## Features
