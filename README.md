@@ -6,7 +6,6 @@ We don't care any degree or how many experienced years, you have. :-), If you ca
 
 We'd like you to make a weather web application which can show the weather anywhere in the world. 
 
-
 ## Design Guideline
 This is just a guideline. You can adjust or totally redesign it.
 
@@ -47,14 +46,16 @@ This is just a guideline. You can adjust or totally redesign it.
 
 You can choose any Places API as your datasource.
 
-
 ## Technology expectations
 - Choosing one of these frameworks: **Angular**, **Vue** or **React**.
 - Good code structure and clean code.
 - You can use any tools to develop it's up to you.
 - Testing is a must.
+- Docker is a plus.
 - Typescript is a plus.
 
-## Contact
-if you have any question feel free send and email to hireme@thelivingos.com
+## How to submit
 
+Fork this repository and send me to hireme@thelivingos.com when you're done an assignment.
+
+And also when you have a question. Feel free to contact us.
