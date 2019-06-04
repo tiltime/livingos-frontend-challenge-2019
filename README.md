@@ -1,10 +1,10 @@
 # LivingOS: Frontend challenge
 
-Hi, all applicants who interest this job oppunity. We would like to take a test on your coding skill.
+Hi, all applicants if you are interested in this job. We would like to test your coding skills.
 
-We don't care any degree or how many experienced years, you have. :-), If you can implement our assignment.
+If you can implement our assignment, regardless of your qualifications or how many years of experience you have, we will contact you for the next steps of the interview process.
 
-We'd like you to make a weather web application which can show the weather anywhere in the world. 
+We'd like you to develop a web application for weather, which can show the current weather from anywhere in the world. 
 
 ## Design Guideline
 This is just a guideline. You can adjust or totally redesign it.
@@ -55,7 +55,7 @@ You can choose any Places API as your datasource.
 - Typescript is a plus.
 
 ## How to submit
-
 Fork this repository and send your repo to hireme@thelivingos.com when you're done an assignment.
 
-And also when you have a question. Feel free to contact us.
+## Contact
+if you have any further questions, please feel free to contact us on hireme@thelivingos.com
