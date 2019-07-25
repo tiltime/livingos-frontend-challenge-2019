@@ -1,0 +1,24 @@
+{
+  "name": "with-redux",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "lodash": "^4.17.15",
+    "next": "latest",
+    "react": "^16.7.0",
+    "react-autosuggest": "^9.4.3",
+    "react-dom": "^16.7.0",
+    "react-places-autocomplete": "^7.2.1",
+    "react-redux": "^5.0.1",
+    "redux": "^3.6.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "license": "ISC"
+}
