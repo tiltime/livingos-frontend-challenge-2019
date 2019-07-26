@@ -3,7 +3,7 @@ const CityList = ({ cities, onDelete }) => {
     return (
         cities.map((city, i) => {
             return(
-                <div key={city.id} className="city item">
+                <div key={i} className="city item">
                     <h3>{city.name}</h3>
                     <button onClick={() => onDelete(city)}>delete</button>
                 </div>
