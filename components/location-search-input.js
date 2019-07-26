@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import PlacesAutocomplete from 'react-places-autocomplete'
 import { addCity } from '../actions/'
+import { InputBox, AutocompleteWrap, AutocompleteItems, AutocompleteItemsContainner } from '../components/layout'
 
 class LocationSearchInput extends React.Component {
     constructor(props) {
@@ -23,16 +24,16 @@ class LocationSearchInput extends React.Component {
 
     render() {
         const renderSuggestionList = ({ getInputProps, getSuggestionItemProps, suggestions }) => (
-            <div className="autocomplete-root">
-                <input {...getInputProps()} />
-                <div className="autocomplete-dropdown-container">
+            <AutocompleteWrap className="autocomplete-root">
+                <InputBox {...getInputProps()} />
+                <AutocompleteItemsContainner>
                     {suggestions.map(suggestion => (
-                        <div {...getSuggestionItemProps(suggestion)}>
+                        <AutocompleteItems {...getSuggestionItemProps(suggestion)}>
                             <span>{suggestion.description}</span>
-                        </div>
+                        </AutocompleteItems>
                     ))}
-                </div>
-            </div>
+                </AutocompleteItemsContainner>
+            </AutocompleteWrap>
         )
         return (
             <div>

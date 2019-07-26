@@ -5,17 +5,19 @@ import CityList from '../components/city-list'
 import LocationSearchInput from '../components/location-search-input'
 import { removeCity } from '../actions/'
 
+import { Wrapper } from '../components/layout'
+
 class Index extends React.Component {
     render () {
         const mylist = this.props.cities
         return (
-            <div className="wrapper">
+            <Wrapper>
                 <HEAD>
                     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7RLMtF1G68gTSD-KvCrHcLdzWw44kyec&libraries=places"></script>
                 </HEAD>
                 <LocationSearchInput/>
                 <CityList cities={mylist} onDelete={this.props.removeCity}/>
-            </div>
+            </Wrapper>
         )
     }
 }
