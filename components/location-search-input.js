@@ -7,18 +7,18 @@ class LocationSearchInput extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-        address: '' 
+        city: '' 
     }
   }
 
-  handleChange = address => {
+  handleChange = city => {
     this.setState({ 
-        address,
+        city,
      })
   };
 
-  handleSelect = address => {
-    this.props.addCity(address)
+  handleSelect = city => {
+    this.props.addCity(city)
   };
 
   render() {
@@ -35,13 +35,15 @@ class LocationSearchInput extends React.Component {
         </div>
     )
     return (
-      <PlacesAutocomplete
-        value={this.state.address}
-        onChange={this.handleChange}
-        onSelect={this.handleSelect}
-      >
-        {renderSuggestionList}
-      </PlacesAutocomplete>
+      <div>
+        <PlacesAutocomplete
+          value={this.state.city}
+          onChange={this.handleChange}
+          onSelect={this.handleSelect}
+        >
+          {renderSuggestionList}
+        </PlacesAutocomplete>
+      </div>
     )
   }
 }

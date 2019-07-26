@@ -1,17 +1,12 @@
-import { ADD_CITY } from '../actions/'
-import _ from 'lodash'
+import { ADD_CITY_SUCCESS } from '../actions/'
 
-const initialState = {
-  cities: []
-}
-
-const cityReducer = (state = initialState, action) => {
+const cityReducer = (state = {}, action) => {
   switch (action.type) {
-      case ADD_CITY:
-          return {
-            ...state,
-            cities: [...state.cities, action.city]
-          }
+      case ADD_CITY_SUCCESS:
+          return [
+            ...state, 
+            action.data
+          ]
       default:
           return state
   }
