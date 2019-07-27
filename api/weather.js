@@ -6,11 +6,20 @@ const api = axios.create({
     baseURL: `http://api.openweathermap.org/data/2.5/`
 })
 
-export const getCityTemperature = (cityname) => {
+export const getCurrentCityTemperature = (cityname) => {
     let q = cityname.replace(/\s+/g, '')
     return api.get('weather', {
         params: {
             APPID: APP_ID, 
             q: q
     }})
+}
+
+export const getCityWeather = (id) => {
+    return api.get('forecast', {
+        params: {
+            APPID: APP_ID,
+            id: id
+        }
+    })
 }

@@ -7,12 +7,18 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@zeit/next-css": "^1.0.1",
     "axios": "^0.19.0",
     "lodash": "^4.17.15",
     "next": "latest",
+    "next-routes": "^1.4.2",
     "react": "^16.7.0",
     "react-autosuggest": "^9.4.3",
     "react-dom": "^16.7.0",
+    "react-modal": "^3.9.1",
     "react-places-autocomplete": "^7.2.1",
     "react-redux": "^5.0.1",
     "redux": "^3.6.0",
