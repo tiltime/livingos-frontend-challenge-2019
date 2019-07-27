@@ -1,3 +1,4 @@
+import { Link } from '../routes'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 
@@ -7,13 +8,14 @@ const CityList = ({ cities, onDelete }) => {
     return (
         cities.map((city, i) => {
             return(
-                
-                <CityItem key={i}>
+                <Link route='city' params={{id: city.id}}>
+                    <CityItem key={city.id}>
                         <ButtonDelete onClick={() => onDelete(city)}><FontAwesomeIcon icon={faTrashAlt} size="xs"/></ButtonDelete>
                         <CityHeader>{city.name}</CityHeader>
                         <TempImg src={`http://openweathermap.org/img/wn/${city.weather[0].icon}@2x.png`}></TempImg>
                         <TempItem>{city.main.temp}</TempItem>
-                </CityItem>
+                    </CityItem>
+                </Link>
             )
         })
     )
