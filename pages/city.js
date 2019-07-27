@@ -1,8 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { fetchCityWeather } from '../actions/'
+import { fetchCityWeather } from '../actions'
 
 import { Wrapper } from '../components/layout'
+import CityDetail from '../components/city-detail'
 
 class City extends React.Component {
     static async getInitialProps ({ reduxStore, query }) {
@@ -12,9 +13,10 @@ class City extends React.Component {
 
     render () {
         const city = this.props.city
+        console.log(city)
         return (
             <Wrapper>
-                <CityDetail city={city}/>
+                <CityDetail data={city}/>
             </Wrapper>
         )
     }
