@@ -9,7 +9,7 @@ import { Wrapper } from '../components/layout'
 
 class Index extends React.Component {
     render () {
-        const mylist = this.props.cities
+        const mylist = this.props.cityList
         return (
             <Wrapper>
                 <HEAD>
@@ -23,8 +23,8 @@ class Index extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-    const { cities } = state
-    return { cities }
+    const { cityList } = state
+    return { cityList }
 }
 
 const mapDispatchToProps = { removeCity }

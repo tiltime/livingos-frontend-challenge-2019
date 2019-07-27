@@ -5,6 +5,10 @@ import { Provider } from 'react-redux'
 import { persistStore } from 'redux-persist'
 import { PersistGate } from 'redux-persist/integration/react'
 
+//import css
+import '../css/reset.css'
+import '../css/styles.css'
+
 class MyApp extends App {
     constructor (props) {
         super(props)

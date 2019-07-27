@@ -24,8 +24,8 @@ class LocationSearchInput extends React.Component {
 
     render() {
         const renderSuggestionList = ({ getInputProps, getSuggestionItemProps, suggestions }) => (
-            <AutocompleteWrap className="autocomplete-root">
-                <InputBox {...getInputProps()} />
+            <AutocompleteWrap>
+                <InputBox {...getInputProps({placeholder: 'Search Places ...'})} />
                 <AutocompleteItemsContainner>
                     {suggestions.map(suggestion => (
                         <AutocompleteItems {...getSuggestionItemProps(suggestion)}>

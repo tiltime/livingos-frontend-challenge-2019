@@ -1,10 +1,7 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-    width: 600px;
-    margin: 0 auto;
-    font: 16px Arial; 
-    box-sizing: border-box;
+    padding-top: 5px
 `
 export const AutocompleteWrap = styled.div`
     position: relative;
@@ -13,7 +10,7 @@ export const AutocompleteWrap = styled.div`
     border: honeydew;
     border-radius: 2px;
     display: block;
-    padding: 0 1px
+    margin-bottom: 5px;
 `
 export const InputBox = styled.input`
     border: 0 none;
@@ -41,4 +38,39 @@ export const AutocompleteItems = styled.div`
     &:hover {
         background-color: #e9e9e9;
     }
+`
+export const CityItem = styled.div`
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: 0 none;
+    position: relative;
+`
+export const TempItem = styled.span`
+    width: 50px;
+    height: 28px;
+    position: absolute;
+    top: 50%;
+    margin-top: -14px;
+    right: 90px;
+    font-size: 20px;
+`
+export const TempImg = styled.img`
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    right: 10px;
+`
+export const ButtonDelete = styled.div`
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    margin-top: -15px
+`
+export const CityHeader = styled.h3`
+    margin-left: 50px;
+    font-size: 20px;
 `
