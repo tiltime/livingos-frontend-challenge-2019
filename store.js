@@ -7,7 +7,8 @@ import rootReducer from './reducers/'
 
 const initialState = {
     cityList: [],
-    cityData: {}
+    cityData: {},
+    units: 'F'
 }
 
 const persistConfig = {

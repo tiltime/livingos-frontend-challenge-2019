@@ -1,9 +1,10 @@
 import { Link } from '../routes'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+import { tempConverter } from '../utils'
 
 import { CityItem, TempItem, TempImg, ButtonDelete, CityHeader } from '../components/layout'
-const CityList = ({ cities, onDelete }) => (
+const CityList = ({ cities, onDelete, units }) => (
         cities.map((city, i) => {
             return(
                 <CityItem key={i}>
@@ -12,7 +13,7 @@ const CityList = ({ cities, onDelete }) => (
                         <CityHeader>{city.name}</CityHeader>
                     </Link>
                     <TempImg src={`http://openweathermap.org/img/wn/${city.weather[0].icon}@2x.png`}></TempImg>
-                    <TempItem>{city.main.temp}</TempItem>
+                    <TempItem>{tempConverter(city.main.temp, units)}</TempItem>
                 </CityItem>
             )
         })

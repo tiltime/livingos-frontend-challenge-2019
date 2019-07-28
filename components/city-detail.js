@@ -1,4 +1,5 @@
 import moment from 'moment-timezone'
+import { tempConverter } from '../utils'
 
 import { HourlyWeatherItem, WeatherDetailHeader, WeatherDetailDate, WeatherDetail, 
     ImgContainer, WeatherDetailCaption, WeatherDetailTemp, WeatherDetailCondition, 
@@ -10,7 +11,7 @@ import { Link } from '../routes'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
-const CityDetail = ({ data }) => {
+const CityDetail = ({ data, units }) => {
     if(!data) return(<div>No Information found</div>)
     const chanceOfRain = data.city.rain? data.city.rain['rain.1h'] : 0
     return (
@@ -18,14 +19,14 @@ const CityDetail = ({ data }) => {
             <WeatherDetail>
                 <BackButton>
                     <Link route="/">
-                        <FontAwesomeIcon icon={faArrowLeft} size="xl"/>
+                        <FontAwesomeIcon icon={faArrowLeft} size="1x"/>
                     </Link>
                 </BackButton>
                 <WeatherDetailHeader>{data.city.name}</WeatherDetailHeader>
                 <WeatherDetailDate>{moment().format('dddd, D MMMM YYYY')}</WeatherDetailDate>
-                <WeatherDetailCaption><span>Max:{parseInt(data.city.main.temp_max)}/Min:{parseInt(data.city.main.temp_min)}</span></WeatherDetailCaption>
+                <WeatherDetailCaption><span>Max:{tempConverter(data.city.main.temp_max, units)}/Min:{tempConverter(data.city.main.temp_min, units)}</span></WeatherDetailCaption>
                 <ImgContainer><img src={`http://openweathermap.org/img/wn/${data.city.weather[0].icon}@2x.png`}/></ImgContainer>
-                <WeatherDetailTemp><span>{parseInt(data.city.main.temp)} </span></WeatherDetailTemp>
+                <WeatherDetailTemp><span>{tempConverter(data.city.main.temp, units)} </span></WeatherDetailTemp>
                 <WeatherDetailCondition>{data.city.weather[0].main}</WeatherDetailCondition>
             </WeatherDetail>
             <Container>
@@ -35,7 +36,7 @@ const CityDetail = ({ data }) => {
                         <HourlyWeatherItem key={i}>
                             <HourlyDate>{moment(item.dt_txt).format('h a')}</HourlyDate>
                             <div><img src={`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`}></img></div>
-                            <div>{parseInt(item.main.temp)}</div>
+                            <div>{tempConverter(item.main.temp, units)}</div>
                         </HourlyWeatherItem>
                     )
                 })}

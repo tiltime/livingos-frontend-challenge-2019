@@ -13,18 +13,18 @@ class City extends React.Component {
 
     render () {
         const data = this.props.cityData
-        const hourlyData = this.props.cityData
+        const units = this.props.units
         return (
             <Wrapper>
-                <CityDetail data={data}/>
+                <CityDetail data={data} units={units}/>
             </Wrapper>
         )
     }
 }
 
 const mapStateToProps = (state) => {
-    const { cityData } = state
-    return { cityData }
+    const { cityData, units } = state
+    return { cityData, units }
 }
 
 const mapDispatchToProps = { fetchCityWeather }

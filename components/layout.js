@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
     padding-top: 5px;
     width: 600px;
     margin: 0 auto;
+    position: relative;
     @media (max-width: 768px) {
         width: 100%;
     }
@@ -59,9 +60,12 @@ export const CityItem = styled.div`
     border: 1px solid #ccc;
     border-top: 0 none;
     position: relative;
+    &:first-child {
+        border-top: 1px solid #ccc;
+    }
 `
 export const TempItem = styled.span`
-    width: 50px;
+    width: 70px;
     height: 28px;
     position: absolute;
     top: 50%;
@@ -144,4 +148,12 @@ export const ColumnHalf = styled.div`
     width: 50%;
     display: inline-block;
     color: #717171;
+`
+export const DropDownContainer = styled.div`
+    text-align: right;
+    width: 120px;
+    margin: 10px 0;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `
