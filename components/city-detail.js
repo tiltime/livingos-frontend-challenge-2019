@@ -1,29 +1,33 @@
 import moment from 'moment-timezone'
+
+import { HourlyWeatherItem, WeatherDetailHeader, WeatherDetailDate, WeatherDetail, ImgContainer, WeatherDetailCaption, WeatherDetailTemp, WeatherDetailCondition } from '../components/layout'
+
 moment.tz.setDefault("Asia/Bangkok")
 
 const CityDetail = ({ data }) => {
     console.log(data)
     if(!data) return(<div>No Information found</div>)
     const chanceOfRain = data.city.rain? data.city.rain['rain.1h'] : 0
+    const currentTemp = parseInt(data.city.main.temp)
     return (
         <div>
-            <div>
-                <h3>{data.city.name}</h3>
-                <span>{moment().format('dddd, D MMMM YYYY')}</span>
-                <div><span>Max:{data.city.main.temp_max}/Min:{data.city.main.temp_min}</span></div>
-                <div><img src={`http://openweathermap.org/img/wn/${data.city.weather[0].icon}@2x.png`}></img></div>
-                <div><span>Current: {data.city.main.temp}</span></div>
-                <div>{data.city.weather[0].main}</div>
-            </div>
+            <WeatherDetail>
+                <WeatherDetailHeader>{data.city.name}</WeatherDetailHeader>
+                <WeatherDetailDate>{moment().format('dddd, D MMMM YYYY')}</WeatherDetailDate>
+                <WeatherDetailCaption><span>Max:{data.city.main.temp_max}/Min:{data.city.main.temp_min}</span></WeatherDetailCaption>
+                <ImgContainer><img src={`http://openweathermap.org/img/wn/${data.city.weather[0].icon}@2x.png`}/></ImgContainer>
+                <WeatherDetailTemp><span>{currentTemp} </span></WeatherDetailTemp>
+                <WeatherDetailCondition>{data.city.weather[0].main}</WeatherDetailCondition>
+            </WeatherDetail>
             <div>
                 <h4>24 HOURS FORCAST</h4>
                 {data.hourly.map((item, i) =>{
                     return(
-                        <div key={i}>
+                        <HourlyWeatherItem key={i}>
                             <div>{moment(item.dt_txt).format('h a')}</div>
                             <div><img src={`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`}></img></div>
                             <div>{item.main.temp}</div>
-                        </div>
+                        </HourlyWeatherItem>
                     )
                 })}
             </div>    

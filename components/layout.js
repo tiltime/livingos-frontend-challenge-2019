@@ -74,3 +74,38 @@ export const CityHeader = styled.h3`
     margin-left: 50px;
     font-size: 20px;
 `
+export const HourlyWeatherItem = styled.div`
+    display: inline-block;
+    text-align: center;
+    width: 16%;
+`
+export const WeatherDetail = styled.div`
+    width: 100%;
+    padding-bottom: 30px;
+`
+export const ImgContainer = styled.div`
+    text-align: center;
+`
+export const WeatherDetailHeader = styled.h1`
+    font-weight: bold;
+    line-height: 1.5;
+`
+export const WeatherDetailDate = styled.span`
+    font-weight: bold;
+    font-size: 1.1em;
+    line-height: 1.5;
+`
+export const WeatherDetailCaption = styled.div`
+    font-size: 0.85em;
+    color: #717171;
+`
+export const WeatherDetailTemp = styled.div`
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+`
+export const WeatherDetailCondition = styled.div`
+    font-size: 1.25em;
+    text-align: center;
+    padding-top: 8px;
+`

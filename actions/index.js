@@ -26,7 +26,7 @@ export const fetchCityWeather = (id) => async dispatch => {
     try {
         const current = await getCityWeather(id)
         const hourly =  await getHourlyWeather(id)
-        const data = { city: current.data, hourly: hourly.data.list.slice(0, 9) }
+        const data = { city: current.data, hourly: hourly.data.list.slice(0, 6)}
         dispatch({ type: FETCH_CITY_WEATHER_SUCCESS, data })
     } catch (err) {
         console.log(err.msg)
