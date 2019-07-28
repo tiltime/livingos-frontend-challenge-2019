@@ -7,24 +7,24 @@ import CityDetail from '../components/city-detail'
 
 class City extends React.Component {
     static async getInitialProps ({ reduxStore, query }) {
-        reduxStore.dispatch(fetchCityWeather(query.id))
+        await reduxStore.dispatch(fetchCityWeather(query.id))
         return {}
     }
 
     render () {
-        const city = this.props.city
-        console.log(city)
+        const data = this.props.cityData
+        const hourlyData = this.props.cityData
         return (
             <Wrapper>
-                <CityDetail data={city}/>
+                <CityDetail data={data}/>
             </Wrapper>
         )
     }
 }
 
 const mapStateToProps = (state) => {
-    const { city } = state
-    return { city }
+    const { cityData } = state
+    return { cityData }
 }
 
 const mapDispatchToProps = { fetchCityWeather }

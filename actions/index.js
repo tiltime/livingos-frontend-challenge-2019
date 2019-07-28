@@ -1,4 +1,4 @@
-import { getCurrentCityTemperature, getCityWeather } from '../api/weather'
+import { getHourlyWeather, getCityWeather, getCurrentCityWeather } from '../api/weather'
 
 export const ADD_CITY_SUCCESS = 'ADD_CITY_SUCCESS'
 export const ADD_CITY_FAILURE = 'ADD_CITY_FAILURE'
@@ -9,7 +9,7 @@ export const FETCH_CITY_WEATHER_FAILURE = 'FETCH_CITY_WEATHER_FAILURE'
 
 export const addCity = (city) => async dispatch => {
     try {
-        const { data } = await getCurrentCityTemperature(city)
+        const { data } = await getCurrentCityWeather(city)
         dispatch({ type: ADD_CITY_SUCCESS, data })
     } catch (err) {
         console.log(err.msg)
@@ -24,10 +24,12 @@ export const removeCity = (data) => async dispatch => {
 
 export const fetchCityWeather = (id) => async dispatch => {
     try {
-        const { data } = await getCityWeather(id)
+        const current = await getCityWeather(id)
+        const hourly =  await getHourlyWeather(id)
+        const data = { city: current.data, hourly: hourly.data.list.slice(0, 9) }
         dispatch({ type: FETCH_CITY_WEATHER_SUCCESS, data })
     } catch (err) {
         console.log(err.msg)
-        dispatch({ type: FETCH_CITY_WEATHER_FAILURE, data })
+        dispatch({ type: FETCH_CITY_WEATHER_FAILURE, err })
     }
 }
