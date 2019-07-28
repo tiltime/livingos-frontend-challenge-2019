@@ -5,8 +5,7 @@ import Select from 'react-select'
 import CityList from '../components/city-list'
 import LocationSearchInput from '../components/location-search-input'
 import { removeCity, updateUnits } from '../actions/'
-import { DropDownContainer } from '../components/layout'
-import { Wrapper } from '../components/layout'
+import { DropDownContainer, Wrapper } from '../components/shared/layout'
 
 const options = [
     { value: 'K', label: 'K'},
@@ -28,10 +27,10 @@ class Index extends React.Component {
                     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7RLMtF1G68gTSD-KvCrHcLdzWw44kyec&libraries=places"></script>
                 </HEAD>
                 <LocationSearchInput/>
+                <CityList cities={mylist} onDelete={this.props.removeCity} units={units}/>
                 <DropDownContainer>
                     <Select placeholder={`Units: ${selectedOption}`} options={options} onChange={this.onUpdated} value={selectedOption} />
-                </DropDownContainer>  
-                <CityList cities={mylist} onDelete={this.props.removeCity} units={units}/>      
+                </DropDownContainer>        
             </Wrapper>
         )
     }

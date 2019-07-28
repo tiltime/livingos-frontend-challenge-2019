@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { fetchCityWeather } from '../actions'
 
-import { Wrapper } from '../components/layout'
+import { Wrapper } from '../components/shared/layout'
 import CityDetail from '../components/city-detail'
 
 class City extends React.Component {

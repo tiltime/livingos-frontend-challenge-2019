@@ -1,9 +1,9 @@
 import moment from 'moment-timezone'
 import { tempConverter } from '../utils'
-
-import { HourlyWeatherItem, WeatherDetailHeader, WeatherDetailDate, WeatherDetail, 
-    ImgContainer, WeatherDetailCaption, WeatherDetailTemp, WeatherDetailCondition, 
-    WeatherSubHeader, BackButton, Container, HourlyDate, ColumnHalf } from '../components/layout'
+import { HourlyWeatherItem, HourlyDate, WeatherDetailHeader, WeatherDetailDate, WeatherDetail, 
+    WeatherDetailCaption, WeatherDetailTemp, WeatherDetailCondition, 
+    WeatherSubHeader } from '../components/styled/weather-detail'
+import { BackButton, Container, ColumnHalf, ImgContainer } from '../components/shared/layout'
 
 moment.tz.setDefault("Asia/Bangkok")
 

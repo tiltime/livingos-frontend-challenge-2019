@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import PlacesAutocomplete from 'react-places-autocomplete'
 import { addCity } from '../actions/'
-import { InputBox, AutocompleteWrap, AutocompleteItems, AutocompleteItemsContainner } from '../components/layout'
+import { InputBox, AutocompleteWrap, AutocompleteItems, AutocompleteItemsContainner } from '../components/styled/autocomplete'
 
 class LocationSearchInput extends React.Component {
     constructor(props) {

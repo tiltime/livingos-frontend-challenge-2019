@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 import { tempConverter } from '../utils'
 
-import { CityItem, TempItem, TempImg, ButtonDelete, CityHeader } from '../components/layout'
+import { CityItem, TempItem, TempImg, ButtonDelete, CityHeader } from '../components/styled/city'
 const CityList = ({ cities, onDelete, units }) => (
         cities.map((city, i) => {
             return(
