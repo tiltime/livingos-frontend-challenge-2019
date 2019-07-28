@@ -1,7 +1,322 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`With Snapshot Testing Render CityItem 1`] = `
+exports[`With Snapshot Testing Render CityDetail 1`] = `
 <div>
-  No Information found
+  <div
+    className="sc-htoDjs gniiQQ"
+  >
+    <a
+      className="sc-jzJRlG iKaLzD"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-arrow-left fa-w-14 fa-1x "
+        data-icon="arrow-left"
+        data-prefix="fas"
+        focusable="false"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        role="img"
+        style={Object {}}
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </a>
+    <h1
+      className="sc-dnqmqq GdWQO"
+    >
+      London
+    </h1>
+    <span
+      className="sc-iwsKbI TJZXF"
+    >
+      Sunday, 28 July 2019
+    </span>
+    <div
+      className="sc-gZMcBi iNREKx"
+    >
+      <span>
+        Max:
+        24 C
+        /Min:
+        16 C
+      </span>
+    </div>
+    <div
+      className="sc-kAzzGY fLUgRX"
+    >
+      <img
+        src="http://openweathermap.org/img/wn/04d@2x.png"
+      />
+    </div>
+    <div
+      className="sc-gqjmRU jBfXFO"
+    >
+      <span>
+        20 C
+         
+      </span>
+    </div>
+    <div
+      className="sc-VigVT USiDE"
+    >
+      Clouds
+    </div>
+  </div>
+  <div
+    className="sc-cSHVUG jeoAEo"
+  >
+    <h5
+      className="sc-jTzLTM eOgeLG"
+    >
+      24 HOURS FORCAST
+    </h5>
+    <div
+      className="sc-EHOje AaVpn"
+    >
+      <span
+        className="sc-bZQynM jKwUbO"
+      >
+        3 pm
+      </span>
+      <div>
+        <img
+          src="http://openweathermap.org/img/wn/04d@2x.png"
+        />
+      </div>
+      <div>
+        23 C
+      </div>
+    </div>
+    <div
+      className="sc-EHOje AaVpn"
+    >
+      <span
+        className="sc-bZQynM jKwUbO"
+      >
+        6 pm
+      </span>
+      <div>
+        <img
+          src="http://openweathermap.org/img/wn/04d@2x.png"
+        />
+      </div>
+      <div>
+        22 C
+      </div>
+    </div>
+    <div
+      className="sc-EHOje AaVpn"
+    >
+      <span
+        className="sc-bZQynM jKwUbO"
+      >
+        9 pm
+      </span>
+      <div>
+        <img
+          src="http://openweathermap.org/img/wn/01n@2x.png"
+        />
+      </div>
+      <div>
+        18 C
+      </div>
+    </div>
+    <div
+      className="sc-EHOje AaVpn"
+    >
+      <span
+        className="sc-bZQynM jKwUbO"
+      >
+        12 am
+      </span>
+      <div>
+        <img
+          src="http://openweathermap.org/img/wn/02n@2x.png"
+        />
+      </div>
+      <div>
+        15 C
+      </div>
+    </div>
+    <div
+      className="sc-EHOje AaVpn"
+    >
+      <span
+        className="sc-bZQynM jKwUbO"
+      >
+        3 am
+      </span>
+      <div>
+        <img
+          src="http://openweathermap.org/img/wn/04n@2x.png"
+        />
+      </div>
+      <div>
+        14 C
+      </div>
+    </div>
+    <div
+      className="sc-EHOje AaVpn"
+    >
+      <span
+        className="sc-bZQynM jKwUbO"
+      >
+        6 am
+      </span>
+      <div>
+        <img
+          src="http://openweathermap.org/img/wn/04d@2x.png"
+        />
+      </div>
+      <div>
+        14 C
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-cSHVUG jeoAEo"
+  >
+    <h5
+      className="sc-jTzLTM eOgeLG"
+    >
+      Current Details
+    </h5>
+    <div
+      className="sc-chPdSV cDXXyb"
+    >
+      Humidity
+    </div>
+    <div
+      className="sc-chPdSV cDXXyb"
+    >
+      64
+    </div>
+    <div
+      className="sc-chPdSV cDXXyb"
+    >
+      Wind
+    </div>
+    <div
+      className="sc-chPdSV cDXXyb"
+    >
+      7.2
+    </div>
+    <div
+      className="sc-chPdSV cDXXyb"
+    >
+      Pressure
+    </div>
+    <div
+      className="sc-chPdSV cDXXyb"
+    >
+      1006
+    </div>
+    <div
+      className="sc-chPdSV cDXXyb"
+    >
+      Chance of rain
+    </div>
+    <div
+      className="sc-chPdSV cDXXyb"
+    >
+      0
+    </div>
+  </div>
 </div>
+`;
+
+exports[`With Snapshot Testing Render CityItem 1`] = `
+Array [
+  <div
+    className="sc-htpNat Qjycj"
+  >
+    <div
+      className="sc-bdVaJa qlDJM"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-trash-alt fa-w-14 fa-xs "
+        data-icon="trash-alt"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+    <h3
+      className="sc-bwzfXH hACZDN"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      Bath
+    </h3>
+    <img
+      className="sc-ifAKCX bVzNiF"
+      src="http://openweathermap.org/img/wn/04d@2x.png"
+    />
+    <span
+      className="sc-bxivhb hAIqZU"
+    >
+      19 C
+    </span>
+  </div>,
+  <div
+    className="sc-htpNat Qjycj"
+  >
+    <div
+      className="sc-bdVaJa qlDJM"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-trash-alt fa-w-14 fa-xs "
+        data-icon="trash-alt"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+    <h3
+      className="sc-bwzfXH hACZDN"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      London
+    </h3>
+    <img
+      className="sc-ifAKCX bVzNiF"
+      src="http://openweathermap.org/img/wn/50d@2x.png"
+    />
+    <span
+      className="sc-bxivhb hAIqZU"
+    >
+      18 C
+    </span>
+  </div>,
+]
 `;
