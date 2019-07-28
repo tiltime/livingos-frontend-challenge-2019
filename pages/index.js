@@ -22,7 +22,6 @@ class Index extends React.Component {
         const mylist = this.props.cityList
         const units = this.props.units
         const selectedOption = this.props.units
-        console.log(mylist)
         return (
             <Wrapper>
                 <HEAD>
