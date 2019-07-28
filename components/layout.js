@@ -6,7 +6,6 @@ export const Wrapper = styled.div`
     margin: 0 auto;
     @media (max-width: 768px) {
         width: 100%;
-        padding: 0 10px
     }
 `
 export const AutocompleteWrap = styled.div`
@@ -47,10 +46,10 @@ export const AutocompleteItems = styled.div`
 `
 export const BackButton = styled.a`
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 5px;
+    right: 10px;
     color: #717171;
-    font-size: 20px;
+    font-size: 1.5em;
     &:hover {
         opacity: 0.7;
     }
@@ -87,21 +86,23 @@ export const ButtonDelete = styled.div`
     margin-top: -15px
 `
 export const Container = styled.div`
-    margin-bottom: 30px;
+    margin: 30px 0;
 `
 export const CityHeader = styled.h3`
     margin-left: 50px;
-    font-size: 20px;
+    font-size: 1.4em;
 `
 export const HourlyWeatherItem = styled.div`
     display: inline-block;
     text-align: center;
     width: 16%;
 `
+export const HourlyDate = styled.span`
+    font-size: 0.85em;
+`
 export const WeatherDetail = styled.div`
     width: 100%;
     position: relative;
-    padding-bottom: 30px;
 `
 export const ImgContainer = styled.div`
     text-align: center;
@@ -130,7 +131,6 @@ export const WeatherDetailCondition = styled.div`
     padding-top: 8px;
 `
 export const WeatherSubHeader = styled.h5`
-    margin-left: 10px;
     font-size: 0.85em;
     color: #717171;
     margin-bottom: 20px;  
@@ -139,4 +139,9 @@ export const WeatherSubHeader = styled.h5`
 export const HourlyTemp = styled.span`
     font-size: 1.1em;
     font-weight: bold;
+`
+export const ColumnHalf = styled.div`
+    width: 50%;
+    display: inline-block;
+    color: #717171;
 `

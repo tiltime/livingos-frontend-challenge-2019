@@ -1,7 +1,8 @@
 import moment from 'moment-timezone'
 
 import { HourlyWeatherItem, WeatherDetailHeader, WeatherDetailDate, WeatherDetail, 
-    ImgContainer, WeatherDetailCaption, WeatherDetailTemp, WeatherDetailCondition, WeatherSubHeader, BackButton, Container } from '../components/layout'
+    ImgContainer, WeatherDetailCaption, WeatherDetailTemp, WeatherDetailCondition, 
+    WeatherSubHeader, BackButton, Container, HourlyDate, ColumnHalf } from '../components/layout'
 
 moment.tz.setDefault("Asia/Bangkok")
 
@@ -17,7 +18,7 @@ const CityDetail = ({ data }) => {
             <WeatherDetail>
                 <BackButton>
                     <Link route="/">
-                        <FontAwesomeIcon icon={faArrowLeft} size="s"/>
+                        <FontAwesomeIcon icon={faArrowLeft} size="xl"/>
                     </Link>
                 </BackButton>
                 <WeatherDetailHeader>{data.city.name}</WeatherDetailHeader>
@@ -32,7 +33,7 @@ const CityDetail = ({ data }) => {
                 {data.hourly.map((item, i) =>{
                     return(
                         <HourlyWeatherItem key={i}>
-                            <div>{moment(item.dt_txt).format('h a')}</div>
+                            <HourlyDate>{moment(item.dt_txt).format('h a')}</HourlyDate>
                             <div><img src={`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`}></img></div>
                             <div>{parseInt(item.main.temp)}</div>
                         </HourlyWeatherItem>
@@ -41,10 +42,10 @@ const CityDetail = ({ data }) => {
             </Container>    
             <Container>
                 <WeatherSubHeader>Current Details</WeatherSubHeader>
-                <div>Humidity <span>{data.city.main.humidity}</span></div>
-                <div>Wind <span>{data.city.wind.speed}</span></div>
-                <div>Pressure: <span>{data.city.main.pressure}</span></div>
-                <div>Chance of rain: <span>{chanceOfRain}</span></div>
+                <ColumnHalf>Humidity</ColumnHalf><ColumnHalf>{data.city.main.humidity}</ColumnHalf>
+                <ColumnHalf>Wind</ColumnHalf><ColumnHalf>{data.city.wind.speed}</ColumnHalf>
+                <ColumnHalf>Pressure</ColumnHalf><ColumnHalf>{data.city.main.pressure}</ColumnHalf>
+                <ColumnHalf>Chance of rain</ColumnHalf><ColumnHalf>{chanceOfRain}</ColumnHalf>
             </Container>
         </div>
     )
