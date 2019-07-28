@@ -14,7 +14,7 @@ const initialState = {
 const persistConfig = {
     key: 'primary',
     storage,
-    whitelist: ['cityList']
+    whitelist: ['cityList', 'units']
 }
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)

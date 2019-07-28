@@ -150,7 +150,6 @@ export const ColumnHalf = styled.div`
     color: #717171;
 `
 export const DropDownContainer = styled.div`
-    text-align: right;
     width: 120px;
     margin: 10px 0;
     @media (max-width: 768px) {
