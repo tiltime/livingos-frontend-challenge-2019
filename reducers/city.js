@@ -1,4 +1,4 @@
-import { FETCH_CITY_WEATHER_SUCCESS } from '../actions/index'
+import { FETCH_CITY_WEATHER_SUCCESS } from '../actions/city-weather'
 
 const cityReducer = (state = {}, action) => {
     switch (action.type) {

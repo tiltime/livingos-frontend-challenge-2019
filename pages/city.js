@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { fetchCityWeather } from '../actions'
+import { fetchCityWeather } from '../actions/city-weather'
 
 import { Wrapper } from '../components/shared/layout'
 import CityDetail from '../components/city-detail'

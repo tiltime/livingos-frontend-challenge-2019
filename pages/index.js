@@ -4,7 +4,8 @@ import HEAD from 'next/head'
 import Select from 'react-select'
 import CityList from '../components/city-list'
 import LocationSearchInput from '../components/location-search-input'
-import { removeCity, updateUnits } from '../actions/'
+import { updateUnits } from '../actions/units'
+import { removeCity } from '../actions/city-weather'
 import { DropDownContainer, Wrapper } from '../components/shared/layout'
 
 const options = [

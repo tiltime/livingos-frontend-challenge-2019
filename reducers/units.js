@@ -1,4 +1,4 @@
-import { UPDATE_UNITS_SUCCESS } from '../actions'
+import { UPDATE_UNITS_SUCCESS } from '../actions/units'
 
 const unitsReducer = (state = '', action) => {
   switch (action.type) {

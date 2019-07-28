@@ -1,4 +1,4 @@
-import { ADD_CITY_SUCCESS, REMOVE_CITY } from '../actions'
+import { ADD_CITY_SUCCESS, REMOVE_CITY } from '../actions/city-weather'
 
 const cityListReducer = (state = [], action) => {
   switch (action.type) {
