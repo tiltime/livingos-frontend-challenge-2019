@@ -8,7 +8,7 @@ const cityListReducer = (state = [], action) => {
                 action.data
             ]
         case REMOVE_CITY:
-            return state.filter(data => data !== action.data)
+            return state.filter(data => data.id !== action.data.id)
         default:
             return state
     }

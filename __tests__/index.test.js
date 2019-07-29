@@ -10,7 +10,6 @@ const units = 'C'
 
 describe('With Snapshot Testing', () => {
     it('Render CityItem', () => {
-        console.log(MockCities)
         const component = renderer.create(<CityList cities={MockCities} units={units} />)
         const tree = component.toJSON()
         expect(tree).toMatchSnapshot()
