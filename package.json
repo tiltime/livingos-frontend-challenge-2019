@@ -17,6 +17,7 @@
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.26",
     "next": "latest",
+    "next-compose-plugins": "^2.2.0",
     "next-routes": "^1.4.2",
     "react": "^16.7.0",
     "react-autosuggest": "^9.4.3",

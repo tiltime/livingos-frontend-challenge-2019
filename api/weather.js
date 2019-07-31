@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-const APP_ID = '7ee2d8e6706dc28e3c12e760a6d04d9f' //FIX move to ENV later
+const APP_ID = process.env.WEATHER_APP_ID
 const api = axios.create({
-    baseURL: `http://api.openweathermap.org/data/2.5/`
+    baseURL: process.env.WEATHER_API_URL
 })
 
 export const getCityHourlyWeather = (id) => {
