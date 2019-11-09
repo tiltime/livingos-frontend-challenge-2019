@@ -4,6 +4,7 @@ const withCSS = require('@zeit/next-css')
 
 const nextConfig = {
     env: {
+        GOOGLE_MAP_API_KEY: 'AIzaSyC7RLMtF1G68gTSD-KvCrHcLdzWw44kyec',
         WEATHER_API_URL: 'http://api.openweathermap.org/data/2.5/',
         WEATHER_APP_ID: '7ee2d8e6706dc28e3c12e760a6d04d9f'
     }
