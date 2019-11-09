@@ -21,7 +21,6 @@ class Index extends React.Component {
     render () {
         const mylist = this.props.cityList
         const units = this.props.units
-        const selectedOption = this.props.units
         return (
             <Wrapper>
                 <HEAD>
@@ -30,7 +29,7 @@ class Index extends React.Component {
                 <LocationSearchInput/>
                 <CityList cities={mylist} onDelete={this.props.removeCity} units={units}/>
                 <DropDownContainer>
-                    <Select placeholder={`Units: ${selectedOption}`} options={options} onChange={this.onUpdated} value={selectedOption} />
+                    <Select placeholder={`Units: ${units}`} options={options} onChange={this.onUpdated} value={units} />
                 </DropDownContainer>        
             </Wrapper>
         )
