@@ -26,7 +26,7 @@ class Index extends React.Component {
         return (
             <Wrapper>
                 <HEAD>
-                    <script type="text/javascript" src=`https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAP_API_KEY}&libraries=places`></script>
+                    <script type="text/javascript" src={`https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAP_API_KEY}&libraries=places`}></script>
                 </HEAD>
                 <LocationSearchInput/>
                 <CityList cities={mylist} onDelete={this.props.removeCity} units={units}/>
